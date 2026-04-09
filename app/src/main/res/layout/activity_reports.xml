@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".ReportsActivity">
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/btn_dropdown"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <Button android:id="@+id/btnShowExpense" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expense" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnShowIncome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Income" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartReports"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChartReports"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/btnSwitchChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch to Line Chart"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChartReports"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textMostSpentCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Spent on: --"
+            android:textSize="18sp"
+            android:textColor="#2D3436"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textTotalReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: $0.00"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/> </LinearLayout>
+</ScrollView>
