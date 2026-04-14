@@ -87,7 +87,8 @@ public class AddTransactionActivity extends AppCompatActivity {
                 // بيبحث في السبنر عن كلمة INCOME أو EXPENSE ويختارها
                 int typePos = ((ArrayAdapter)spinnerType.getAdapter()).getPosition(type.toUpperCase());
                 spinnerType.setSelection(typePos);
-        }}
+        }
+        }
 
         // برمجة زر الحفظ/التعديل
         btnSave.setOnClickListener(v -> {
@@ -173,4 +174,4 @@ public class AddTransactionActivity extends AppCompatActivity {
             finish();
         }
     }
-} // نهاية الكلاس
+}
