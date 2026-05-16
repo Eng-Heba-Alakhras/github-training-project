@@ -3,7 +3,7 @@
     <string-array name="currency_array">
         <item>Dollar ($)</item>
         <item>Shekel (₪)</item>
-        <item>Dinar (JD)</item>
+        <item>Uoro (U)</item>
     </string-array>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // ملاحظة: قمنا بحذف كود viewModel.insert من هنا تماماً
+
     }
 }
