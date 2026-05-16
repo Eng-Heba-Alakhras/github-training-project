@@ -30,7 +30,7 @@ public class Setting_Activity extends AppCompatActivity {
         spinnerCurrency = findViewById(R.id.spinnerCurrency);
         viewModel = new ViewModelProvider(this).get(TransactionViewModel.class);
 
-        String[] currencies = {"$", "₪", "JD"};
+        String[] currencies = {"$", "₪", "U"};
 // 3. إنشاء الـ Adapter لتنسيق شكل القائمة
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, currencies);
