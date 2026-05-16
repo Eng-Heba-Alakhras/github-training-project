@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Setting_Activity"
-    android:background="#F8F9FA">
+    android:background="#EDF0F4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,14 +19,14 @@
             android:text="Settings"
             android:textSize="32sp"
             android:textStyle="bold"
-            android:textColor="#2D3436"
+            android:textColor="#502D3436"
             android:layout_marginBottom="24dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PREFERENCES"
-            android:textColor="#636E72"
+            android:textColor="#E0636E72"
             android:textSize="12sp"
             android:letterSpacing="0.1"
             android:textStyle="bold"
@@ -70,7 +70,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#F1F2F6"
+                    android:background="#84F1F2F6"
                     android:layout_marginHorizontal="16dp"/>
 
                 <RelativeLayout
