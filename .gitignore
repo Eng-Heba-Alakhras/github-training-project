@@ -8,3 +8,14 @@ Thumbs.db
 # Ignore dependency folders
 node_modules/
 
+# Build tools
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+
+# Gradle
+.gradle/
+build/
+
